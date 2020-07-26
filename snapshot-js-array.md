@@ -2,7 +2,7 @@
 
 Modify the implementation of the Snapshot class so that an array stored in the snapshot is not affected by modifications to either the original or restored array.
 
-Starting Code:
+## Starting Code:
 
 ```js
 class Snapshot {
@@ -26,7 +26,7 @@ console.log(array.join()); //It should log "1,2"
 ```
 
 
-## Solution Code
+## Solution
 
 ```js
 class Snapshot {
