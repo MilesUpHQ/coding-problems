@@ -34,3 +34,26 @@ let isParanthesisMatch = (str) => {
 
 console.log(isParanthesisMatch('{({][]})}[()]{}'));
 ```
+
+Another solution:
+
+function matchingBrackets(data) {
+  let bracketList = {
+    '{': '}',
+    '(': ')',
+    '[': ']',
+  };
+  let closed = ['}', ')', ']'];
+
+  let result = [];
+  for (el of data) {
+    if (bracketList[el]) {
+      result.push(bracketList[el]);
+    } else if (closed.indexOf(el) > -1) {
+      if (result.pop() != el) return 'Not Matching';
+    }
+  }
+  return result.length > 0 ? 'Not Matching' : 'Matching';
+}
+
+console.log(matchingBrackets('[]([a+b)])'));
