@@ -37,6 +37,7 @@ console.log(isParanthesisMatch('{({][]})}[()]{}'));
 
 Another solution:
 
+```js
 function matchingBrackets(data) {
   let bracketList = {
     '{': '}',
@@ -57,3 +58,4 @@ function matchingBrackets(data) {
 }
 
 console.log(matchingBrackets('[]([a+b)])'));
+```
