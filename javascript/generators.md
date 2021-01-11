@@ -2,7 +2,15 @@
 
 Can you create a simple ecommerce state machine to update order state using generator so we can do
 
-`order.next()` to update state
+```js
+order = // initialise order with a generator function
+order.next() //to update state
+
+order.next() // order created
+order.next() // order confirmed
+order.next() // order shipped
+order.next() // order delivered
+```
 
 
 ### Simple Solution:
