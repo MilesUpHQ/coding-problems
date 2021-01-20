@@ -16,6 +16,8 @@ sw.reset()
 stop and start will through error if it was already in same state. 
 duration is a read-only property
 
+Note: Can you also create start,start,stop,reset using prototype?
+
 ### Solution
 
 ```js
