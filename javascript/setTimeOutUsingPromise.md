@@ -10,6 +10,8 @@ function delay(ms) {
 delay(3000).then(() => alert('runs after 3 seconds'));
 ```
 
+Note: Can you also try doing the same with async/await
+
 ### Solution
 
 ```js
