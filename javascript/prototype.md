@@ -12,3 +12,10 @@ Note: The order of the elements should be preserved in the resulting array.
 
 ## Solution
 
+```js
+Array.prototype.only = function(keys)
+{
+  if(!Array.isArray(keys)) keys = [keys];
+  return this.filter((a,i) => keys.includes(i));
+}
+```
