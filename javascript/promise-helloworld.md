@@ -17,5 +17,16 @@ Test.describe('Basic Test', () => {
 });
 ```
 
-### Solution
+### Solution 1
 
+```js
+async function promiseHelloWorld() {
+  return 'Hello World!';
+}
+```
+
+### Solution 2
+
+```js
+const promiseHelloWorld = () => new Promise(resolve => resolve('Hello World!'));
+```
