@@ -2,7 +2,7 @@ Create 2 objects
 HtmlElement & HtmlSelectElement
 
 ```js
-e = new HtmlElement
+const e = new HtmlElement()
 e
 ```
 inspecting e on the browser console should show a click function and a focus function in it's prototype
@@ -15,7 +15,81 @@ v HtmlElement
     > focus: f()
 ```
 
+```js
+e.click() // print "clicked"
+e.focus() // print "focused"
+```
+
 Then,
 
 Create HtmlSelectElement with the following methods
 
+```js
+const s = new HtmlSelectElement([])
+s
+```
+
+inspecting s on the browser console will show the following
+
+```
+v HtmlSelectElement
+  > addItem: f()
+  > items: []
+  > removeItem: f()
+  > __proto__: HtmlElement
+```
+
+```js
+s.addItem('1')
+s.addItem('2')
+s.removeItem('2')
+s
+```
+
+inspect s again on browser console
+
+```
+v HtmlSelectElement
+  > addItem: f()
+  > items: ['1']
+  > removeItem: f()
+  > __proto__: HtmlElement
+    > click: f()
+    > __proto__: 
+      > focus: f()
+      > constructor: f HtmlElement()
+      > __proto__: Object
+
+```
+
+Note: Try doing all the above using extend first and then with prototype (without class)
+
+
+### Solution
+
+function HtmlElement(){
+  this.click = function(){
+    console.log("clicked")
+  }
+}
+
+HtmlElement.prototype.focus = function(){
+  console.log("focused")
+}
+
+function HtmlSelectElement(items = []){
+  this.items = items
+  
+  this.addItem = function(item){
+    this.items.push(item)
+  }
+  
+  this.removeItem = function(item){
+    this.items.splice(this.items.indexOf(item), 1)
+  }
+}
+
+HtmlSelectElement.prototype = Object.create(HtmlElement.prototype) // this might not work because it doesn't inherit the click method so
+
+HtmlSelectElement.prototype = new HtmlElement()
+HtmlSelectElement.prototype.constructor = HtmlSelectElement;
