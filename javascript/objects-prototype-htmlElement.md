@@ -67,6 +67,7 @@ Note: Try doing all the above using extend first and then with prototype (withou
 
 ### Solution
 
+```js
 function HtmlElement(){
   this.click = function(){
     console.log("clicked")
@@ -93,3 +94,4 @@ HtmlSelectElement.prototype = Object.create(HtmlElement.prototype) // this might
 
 HtmlSelectElement.prototype = new HtmlElement()
 HtmlSelectElement.prototype.constructor = HtmlSelectElement;
+```
