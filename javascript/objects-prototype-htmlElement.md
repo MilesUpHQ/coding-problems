@@ -1,12 +1,10 @@
-Create 2 objects
-HtmlElement & HtmlSelectElement
+Create 2 object constructor function `HtmlElement` & `HtmlSelectElement` so I can do the following on console:
 
 ```js
 const e = new HtmlElement()
 e
 ```
-inspecting e on the browser console should show a click function and a focus function in it's prototype
-
+inspecting `e` on the browser console should show a `click` function, and a `focus` function in it's prototype as seen below:
 
 ```
 v HtmlElement
@@ -22,14 +20,14 @@ e.focus() // print "focused"
 
 Then,
 
-Create HtmlSelectElement with the following methods
+Create a HtmlSelectElement object with the following method
 
 ```js
 const s = new HtmlSelectElement([])
 s
 ```
 
-inspecting s on the browser console will show the following
+now, inspecting `s` on the browser console will show the following:
 
 ```
 v HtmlSelectElement
@@ -46,7 +44,7 @@ s.removeItem('2')
 s
 ```
 
-inspect s again on browser console
+inspect `s` again on browser console will look like:
 
 ```
 v HtmlSelectElement
