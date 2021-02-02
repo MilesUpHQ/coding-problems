@@ -62,7 +62,6 @@ v HtmlSelectElement
 
 Note: Try doing all the above using extend first and then with prototype (without class)
 
-
 ### Solution
 
 ```js
@@ -86,10 +85,58 @@ function HtmlSelectElement(items = []){
   this.removeItem = function(item){
     this.items.splice(this.items.indexOf(item), 1)
   }
+  
+  this.render = function(){
+    return `
+    <select>${this.items.map(item => `
+    <option>${item}</option>).join('')}
+    </select>`
+  }
 }
 
 HtmlSelectElement.prototype = Object.create(HtmlElement.prototype) // this might not work because it doesn't inherit the click method so
 
 HtmlSelectElement.prototype = new HtmlElement()
 HtmlSelectElement.prototype.constructor = HtmlSelectElement;
+```
+
+
+2. Also, add a render method
+
+```js
+s.render()
+
+// <select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+   </select>
+```
+
+3. Create a new img method
+
+```js
+const img = new HtmlImageElement()
+// it can take src arugument if not passed, it is undefined
+// it inherits from HtmlElement
+// it has the click method and the focus method in the prototype
+img.src = "https://magesh.io/image/1.jpg"
+img.render()
+// <img src="https://magesh.io/image/1.jpg" />
+```
+
+### Solution
+
+```js
+function HtmlImageElement(src){
+  this.src = src
+  
+  this.render = function(){
+    return `<img src="${src}" />`
+  }
+}
+
+HtmlImageElement.prototype = new HtmlElement()
+HtmlImageElement.prototype.constructor = HtmlImageElement;
+
 ```
