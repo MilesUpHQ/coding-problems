@@ -107,10 +107,10 @@ HtmlSelectElement.prototype.constructor = HtmlSelectElement;
 s.render()
 
 // <select>
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-   </select>
+//   <option>1</option>
+//   <option>2</option>
+//   <option>3</option>
+// </select>
 ```
 
 3. Create a new img method
