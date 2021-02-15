@@ -15,7 +15,6 @@ setting `productProxy.description = 'Good Morning'`, description property should
 const product = {};
 const handler = {
     set: function(target, key, value) {
-        console.log(target, key, value.length)
         if(key==='description' && value.length > 5) {
             value = value.substring(0, 5)
         }
