@@ -9,8 +9,8 @@ class Rectangle
 	def area  
 		width * height  
 	end  
-	end  
-	class Square < Rectangle  
+end  
+class Square < Rectangle  
 	def initialize(size)  
 		super(size, size)  
 	end  

@@ -4,19 +4,19 @@ PI = 3.14
   
 module Mathematics  
 	module Geometry  
-	PI="22/7"
-	class Area  
-		class Formula  
-			module SHAPES  
-				class CIRCLE  
-				    PI=3.14  
-					def find_area(r )
-						puts( ::PI * r * r)  
+	 PI="22/7"
+		class Area  
+			class Formula  
+				module SHAPES  
+					class CIRCLE  
+					 PI=3.14  
+						def find_area(r )
+							puts( ::PI * r * r)  
+						end  
 					end  
 				end  
 			end  
 		end  
-	end  
 	end  
 end 
 ``` 
@@ -37,14 +37,14 @@ PI = 3.14
   
 module Mathematics  
 	module Geometry  
-	PI="22/7"
+	 PI="22/7"
 		class Area  
 			class Formula  
 				module SHAPES  
 					class CIRCLE  
-					PI=3.14  
+					 PI=3.14  
 						def find_area(r )
-						puts( ::PI * r * r)  
+							puts( ::PI * r * r)  
 						end  
 					end  
 				end  

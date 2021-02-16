@@ -12,31 +12,28 @@ module Happy
 	def Happy.mood  
 		return "happy"  
 	end  
-       
 	def expression  
 		return "smiling"  
 	end  
 end  
  
 module Sad  
-
-    def Sad.mood  
-      return "sad"  
-    end  
-       
-    def expression  
-      return "frowning"  
-    end  
+	def Sad.mood  
+		return "sad"  
+	end  
+	def expression  
+		return "frowning"  
+	end  
 end  
   
- class Person  
-    include Happy  
-    include Sad  
-     attr_accessor :mood  
-      def initialize  
-         @mood = Happy.mood  
-      end  
- end  
+class Person  
+ include Happy  
+ include Sad  
+ attr_accessor :mood  
+	def initialize  
+		@mood = Happy.mood  
+	end  
+end  
    
  p1 = Person.new  
  puts(p1.mood)  
@@ -49,27 +46,25 @@ module Happy
 	def Happy.mood  
 		return "happy"  
 	end  
-
 	def expression  
 		return "smiling"  
 	end  
-alias happyexpression expression  
+ alias happyexpression expression  #name conflict fix
 end  
 module Sad  
-    def Sad.mood  
-    	return "sad"  
-    end  
-
-def expression  
-	return "frowning"  
-end  
-alias sadexpression expression  
+	def Sad.mood  
+		return "sad"  
+	end  
+	def expression  
+		return "frowning"  
+	end  
+ alias sadexpression expression  #name conflict fix
 end  
 
 class Person  
-	include Happy  
-	include Sad  
-	attr_accessor :mood  
+ include Happy  
+ include Sad  
+ attr_accessor :mood  
 	def initialize  
 		@mood = Happy.mood  
 	end  

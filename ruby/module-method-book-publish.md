@@ -4,11 +4,9 @@ module Book
 	def price(n) 
 		return n
 	end  
-
 	def author(a)
 		return a
-	end  
-    
+	end      
 end  
 
 class Library  
@@ -33,7 +31,6 @@ module Book
 	def price(n) 
 		return n
 	end  
-
 	def author(a)
 		return a
 	end  

@@ -27,7 +27,6 @@ def sayHello( aName )
 	rescue NoNameError => e
 		puts( e.class )
 		puts( "message: " + e )
-	
 	else
 		puts( "Hello #{aName}" )
 	end
