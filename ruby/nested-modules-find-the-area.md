@@ -21,8 +21,13 @@ module Mathematics
 end 
 ``` 
 #### Expected output
-a)Print the constant value of  Geometry?
+
+a)Print the constant value of  Geometry module?
+
+
 b)Print the Constant value of class Circle?
+
+
 c)Call the find_area method using an object?
 
 

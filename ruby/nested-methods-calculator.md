@@ -1,9 +1,14 @@
 ### Question  
+
 In the following code
+
 a)     	Create an object and call the method/methods.
-b)     	Is it possible to access the inner methods using an object?
-c)     	What will happen if we access the inner methods directly using an object?
-d)     	How can the divide method be called without an object?
+
+b)     	Is it possible to access the inner methods using the same object?
+
+c)     	What will happen if we access the inner methods directly using the same object?
+
+
 ```ruby
 class Calc  
 	def Arithmetic  
@@ -51,7 +56,7 @@ end
  
 ob = Calc.new  
 ob.Arithmetic  
-ob.add   
+ob.add   #using the same object,call the inner methods
 puts  
 ob.subract  
 puts  

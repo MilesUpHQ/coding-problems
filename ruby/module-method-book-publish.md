@@ -22,7 +22,11 @@ end
 ```
 
 a) In the above coding, if you need to use author method as both an instance method and as a module method, how will you do?
-b) Show how to access the author method with object and without object?
+
+
+b) Show how to access the author method with an object and without an object?
+
+
 ### Solution
 ```ruby
 module Book  

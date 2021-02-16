@@ -1,6 +1,11 @@
 ### Question
+
 a) What is the output of the following code? What is the problem you observe from this output?
-b) How will you fix the name conflict (expression method) without renaming the method?
+
+
+b) How will you fix the name conflict (expression method) without renaming that method?
+
+
 
 ```ruby
 module Happy  
