@@ -8,7 +8,7 @@ The roots of the quadratic equation can be found with the following formula:
 
 
 For example, find_roots(2, 10, 8) should return [-1, -4] or [-4, -1] as the roots of the equation 2x2 + 10x + 8 = 0 are -1 and -4.
-```
+```ruby
 def find_roots(a, b, c)
 //your code
 end
@@ -17,15 +17,16 @@ puts find_roots(2, 10, 8)
 ```
 
 ### Solution
-```
+```ruby
 
 def find_roots(a, b, c)  
-  r1 = (b * -1) + Math.sqrt((b ** 2) - (4 * a * c))   
-  r1 = r1/ (2 * a)  
-  r2 = (b * -1) - Math.sqrt((b ** 2) - (4 * a * c))  
-  r2 = r2/ (2 * a)  
+  r1 = ((b * -1) + Math.sqrt((b ** 2) - (4 * a * c)))/(2 * a)  
+  r2 = ((b * -1) - Math.sqrt((b ** 2) - (4 * a * c)))/(2 * a)  
   return [r1,r2]  
 end  
   
 puts find_roots(2, 10, 8)  
+
 ```
+
+###### source: https://www.testdome.com/

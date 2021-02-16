@@ -16,7 +16,7 @@ Parse the retrieved data and print the values.
 
 Use httparty gem
 
-```
+```ruby
 require 'httparty'  
 
 response = HTTParty.get('https://jsonplaceholder.typicode.com/users')  
