@@ -19,19 +19,19 @@ class NoNameError < Exception
   end
 end
 
-def sayHello( aName )
+def sayHello(aName)
   begin
-    if (aName == "") or (aName == nil) then
-    raise NoNameError 
-  end
+    if(aName == "") or (aName == nil) then
+      raise NoNameError 
+    end
   rescue NoNameError => e
-    puts( e.class )
-    puts( "message: " + e )
+    puts(e.class)
+    puts("message: " + e)
   else
-    puts( "Hello #{aName}" )
+    puts("Hello #{aName}")
   end
 end
 
-sayHello( nil )
+sayHello(nil)
 ```
 ######  source :  http://www.sapphiresteel.com 
