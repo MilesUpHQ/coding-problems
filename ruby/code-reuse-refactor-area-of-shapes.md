@@ -2,7 +2,7 @@
 ```ruby
 class Rectangle  
 	def initialize(width, height)  
-		self.width = width  
+	  self.width = width  
 		self.height = height  
 	end  
 	attr_accessor :width, :height  
