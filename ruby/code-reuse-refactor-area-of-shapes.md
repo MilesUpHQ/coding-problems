@@ -1,19 +1,19 @@
 ### Question
 ```ruby
 class Rectangle  
- def initialize(width, height)  
-  self.width = width  
-  self.height = height  
- end  
+  def initialize(width, height)  
+    self.width = width  
+    self.height = height  
+  end  
  attr_accessor :width, :height  
- def area  
-  width * height  
- end  
+  def area  
+    width * height  
+  end  
 end  
 class Square < Rectangle  
- def initialize(size)  
-  super(size, size)  
- end  
+  def initialize(size)  
+    super(size, size)  
+  end  
 end  
   
 square = Square.new(5)  
@@ -34,28 +34,28 @@ Hint : Use methods. Use code reuse techniques.
 ### Solution
 ```ruby
 class Rectangle  
- def initialize(width, height)  
-  self.width = width  
-  self.height = height  
- end  
+  def initialize(width, height)  
+    self.width = width  
+    self.height = height  
+  end  
  attr_accessor :width, :height  
- def area  
-  width * height  
- end  
+  def area  
+    width * height  
+  end  
 end  
 
 class Square < Rectangle  
- def initialize(size)  
-  super(size, size)  
- end  
- def width=(size)  
-  @width = size  
-  @height = size  
- end  
- def height=(size)  
-  @width = size  
-  @height = size  
- end  
+  def initialize(size)  
+    super(size, size)  
+  end  
+  def width=(size)  
+    @width = size  
+    @height = size  
+  end  
+  def height=(size)  
+    @width = size  
+    @height = size  
+  end  
 end  
 square = Square.new(5)  
 square.width = 10  

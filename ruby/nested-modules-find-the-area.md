@@ -3,21 +3,21 @@
 PI = 3.14
   
 module Mathematics  
-	module Geometry  
-	 PI="22/7"
-		class Area  
-			class Formula  
-				module SHAPES  
-					class CIRCLE  
-					 PI=3.14  
-						def find_area(r )
-							puts( ::PI * r * r)  
-						end  
-					end  
-				end  
-			end  
-		end  
-	end  
+  module Geometry  
+   PI="22/7"
+    class Area  
+      class Formula  
+        module SHAPES  
+          class CIRCLE  
+           PI=3.14  
+            def find_area(r )
+              puts( ::PI * r * r)  
+            end  
+          end  
+        end  
+      end  
+    end  
+  end  
 end 
 ``` 
 #### Expected output
@@ -36,21 +36,21 @@ c)Call the find_area method using an object?
 PI = 3.14
   
 module Mathematics  
-	module Geometry  
-	 PI="22/7"
-		class Area  
-			class Formula  
-				module SHAPES  
-					class CIRCLE  
-					 PI=3.14  
-						def find_area(r )
-							puts( ::PI * r * r)  
-						end  
-					end  
-				end  
-			end  
-		end  
-	end  
+  module Geometry  
+   PI="22/7"
+    class Area  
+      class Formula  
+        module SHAPES  
+          class CIRCLE  
+           PI=3.14  
+            def find_area(r )
+              puts( ::PI * r * r)  
+            end  
+          end  
+        end  
+      end  
+    end  
+  end  
 end  
 #answers
 puts(Mathematics::Geometry::PI)  

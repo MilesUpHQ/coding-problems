@@ -11,46 +11,46 @@ c)What will happen if we access the inner methods directly using the same object
 
 ```ruby
 class Calc  
-	def Arithmetic  
-	 print( "inside arithmetic" )  
-		def add  
-			puts(20+10)  
-			subract  
-		end   	       
-		def subract  
-			puts( 20-10 )  
-			multiply  
-		end  
-		def multiply  
-			puts(20*10)  
-		end   
-		def divide  
-			puts( 20/10 )  
-		end  
-	end  
+  def Arithmetic  
+    print( "inside arithmetic" )  
+    def add  
+      puts(20+10)  
+      subract  
+    end   	       
+    def subract  
+      puts( 20-10 )  
+      multiply  
+    end  
+    def multiply  
+      puts(20*10)  
+    end   
+    def divide  
+      puts( 20/10 )  
+    end  
+  end  
 end  
 ```
 ### Solution
 ```ruby
 class Calc  
-	def Arithmetic  
-	 print( "inside arithmetic" )  
-		def add  
-			puts(20+10)  
-			subract  
-		end   
-		def subract  
-			puts( 20-10 )  
-			multiply  
-		end  
-		def multiply  
-			puts(20*10)  
-			divide      #called the divide method
-		end   
-		def divide  
-			puts( 20/10 )  
-		end  
-	end  
+  def Arithmetic  
+    print( "inside arithmetic" )  
+    def add  
+      puts(20+10)  
+      subract  
+    end   
+    def subract  
+      puts( 20-10 )  
+      multiply  
+    end  
+    def multiply  
+      puts(20*10)  
+      divide      #called the divide method
+    end   
+    def divide  
+      puts( 20/10 )  
+    end  
+  end  
 end  
  
 ob = Calc.new  

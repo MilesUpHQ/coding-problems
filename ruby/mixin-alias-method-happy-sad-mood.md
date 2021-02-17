@@ -9,30 +9,30 @@ b) How will you fix the name conflict (expression method) without renaming that 
 
 ```ruby
 module Happy  
-	def Happy.mood  
-		return "happy"  
-	end  
-	def expression  
-		return "smiling"  
-	end  
+  def Happy.mood  
+    return "happy"  
+  end  
+  def expression  
+    return "smiling"  
+  end  
 end  
  
 module Sad  
-	def Sad.mood  
-		return "sad"  
-	end  
-	def expression  
-		return "frowning"  
-	end  
+  def Sad.mood  
+    return "sad"  
+  end  
+  def expression  
+    return "frowning"  
+  end  
 end  
   
 class Person  
  include Happy  
  include Sad  
  attr_accessor :mood  
-	def initialize  
-		@mood = Happy.mood  
-	end  
+  def initialize  
+    @mood = Happy.mood  
+  end  
 end  
    
  p1 = Person.new  
@@ -43,21 +43,21 @@ end
 ### Solution
 ```ruby
 module Happy  
-	def Happy.mood  
-		return "happy"  
-	end  
-	def expression  
-		return "smiling"  
-	end  
+  def Happy.mood  
+    return "happy"  
+  end  
+  def expression  
+    return "smiling"  
+  end  
  alias happyexpression expression  #name conflict fix
 end  
 module Sad  
-	def Sad.mood  
-		return "sad"  
-	end  
-	def expression  
-		return "frowning"  
-	end  
+  def Sad.mood  
+    return "sad"  
+  end  
+  def expression  
+    return "frowning"  
+  end  
  alias sadexpression expression  #name conflict fix
 end  
 
@@ -65,9 +65,9 @@ class Person
  include Happy  
  include Sad  
  attr_accessor :mood  
-	def initialize  
-		@mood = Happy.mood  
-	end  
+  def initialize  
+    @mood = Happy.mood  
+  end  
 end  
 p2 = Person.new  
 puts(p2.mood)  
