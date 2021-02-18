@@ -9,14 +9,24 @@ c) If no filters are provided, the list of student records should be returned as
 For example, consider the following code:
 
 students = [
+
   { name: 'Thomas Edison',  age: 33, gpa: 3.45 },
+
   { name: 'Grace Hopper',  age: 23,gpa: 3.99 },
+
   { name: 'Leonardo DaVinci', age: 43, gpa: 2.78 }
+
 ]
 
 
 honor_roll = ->(record) { record[:gpa] > 3.0 }
+
 filter(students, honor_roll) 
+
+
+should return:
+
+[{:name=>"Thomas Edison", :gpa=>3.45},{:name=>"Grace Hopper", :gpa=>3.99}]
 
 ```ruby
 def filter(students, *filters)
@@ -35,10 +45,6 @@ honor_roll = ->(record) { record[:gpa] > 3.0 }
 honor_roll_members = filter(students, honor_roll)
 puts honor_roll_members
 ```
-should return:
-
-[{:name=>"Thomas Edison", :gpa=>3.45},{:name=>"Grace Hopper", :gpa=>3.99}]
-
 
 
 ### Solution
@@ -66,3 +72,4 @@ honor_roll_members = filter(students, honor_roll, roll_2)
 puts honor_roll_members 
 
 ```
+###### source: https://www.testdome.com/

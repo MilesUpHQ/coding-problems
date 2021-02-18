@@ -12,6 +12,7 @@ class Rectangle
     width * height  
   end  
 end  
+
 class Square < Rectangle  
   def initialize(size)  
     super(size, size)  

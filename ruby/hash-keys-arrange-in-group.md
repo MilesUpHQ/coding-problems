@@ -15,7 +15,7 @@ for hash
 
 the group_by_owners function should return 
 
-{'Randy' => ['Input.txt', 'Output.txt'], 'Stan' => ['Code.py
+{'Randy' => ['Input.txt', 'Output.txt'], 'Stan' => ['Code.py']
 
 ```ruby
 def group_by_owners(files)
@@ -27,6 +27,7 @@ files = {
   'Code.py' => 'Stan',
   'Output.txt' => 'Randy'
 }
+
 puts group_by_owners(files)
 ```
 
@@ -39,8 +40,7 @@ def group_by_owners(files)
     files.each do |key, value|
       new_hash[value] = [] unless new_hash.has_key?(value)
       new_hash[value] << key
-    end
-    
+    end 
   return new_hash
 end
 
@@ -49,5 +49,7 @@ files = {
   'Code.py' => 'Stan',
   'Output.txt' => 'Randy'
 }
+
 puts group_by_owners(files)
 ```
+###### source: https://www.testdome.com/
