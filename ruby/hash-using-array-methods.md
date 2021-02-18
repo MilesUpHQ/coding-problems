@@ -30,8 +30,8 @@ f) After appending reverse the result array
   
  p( h1.keys & h2.keys )   
  p( h1.values & h2.values )  
- p( h1.keys+h2.keys )  
- p( h1.values-h2.values )  
+ p( h1.keys + h2.keys )  
+ p( h1.values - h2.values )  
  p( (h1.keys << h2.keys)  )  
  p( (h1.keys << h2.keys).flatten.reverse  ) 
  ``` 

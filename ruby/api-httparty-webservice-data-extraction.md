@@ -24,6 +24,6 @@ response = HTTParty.get('https://jsonplaceholder.typicode.com/users')
 puts response.body, response.code 
 
   
- // Use loops to display the values one by one
+ #Use loops to display the values one by one
 
 ```

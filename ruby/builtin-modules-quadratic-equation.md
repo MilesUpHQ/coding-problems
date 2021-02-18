@@ -10,7 +10,7 @@ The roots of the quadratic equation can be found with the following formula:
 For example, find_roots(2, 10, 8) should return [-1, -4] or [-4, -1] as the roots of the equation 2x2 + 10x + 8 = 0 are -1 and -4.
 ```ruby
 def find_roots(a, b, c)
-//your code
+  #your code
 end
 
 puts find_roots(2, 10, 8)

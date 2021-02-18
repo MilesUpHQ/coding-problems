@@ -22,20 +22,19 @@ formula : Price = Price * taxrate
 ### Solution
 ```ruby
 def calcTax( taxRate )  
-return proc{  
-|subtotal|  
-subtotal * taxRate  
-}   
+  return proc{|subtotal|  
+    subtotal * taxRate  
+  }   
 end  
     
 salesTax = calcTax( 0.10 )  
 vat = calcTax( 0.18 )  
 
- print( "Tax due on book = ")  
- print( salesTax.call( 58 ) )  
+print( "Tax due on book = ")  
+print( salesTax.call( 58 ) )  
 
- print( "\nVat due on bag = ")  
- print( vat.call( 300 ) )   
+print( "\nVat due on bag = ")  
+print( vat.call( 300 ) )   
 
 ```  
 ######  source :  http://www.sapphiresteel.com 

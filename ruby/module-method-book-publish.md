@@ -4,13 +4,15 @@ module Book
   def price(n) 
     return n
   end  
+
   def author(a)
     return a
   end      
 end  
 
 class Library  
- include Book  
+ include Book 
+
   def publish  
     puts(price(200))  
     puts(author("Google"))  
@@ -31,14 +33,17 @@ module Book
   def price(n) 
     return n
   end  
+
   def author(a)
     return a
   end  
+  
  module_function :author  #Both instance and module method
 end  
 
 class Library  
  include Book  
+
   def publish  
     puts(price(200))  
     puts(author("Google"))  

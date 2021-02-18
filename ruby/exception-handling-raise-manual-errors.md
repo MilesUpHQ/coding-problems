@@ -14,8 +14,8 @@ c) Use backtrace method to investigate the error
 
 ```ruby
 class NoNameError < Exception
-  def to_str
-    "No Name given!"    
+  def to_str    
+    "No Name given!"  #manually defined error 
   end
 end
 
@@ -27,6 +27,7 @@ def sayHello(aName)
   rescue NoNameError => e
     puts(e.class)
     puts("message: " + e)
+    puts(e.backtrace)  #backtrace method called
   else
     puts("Hello #{aName}")
   end

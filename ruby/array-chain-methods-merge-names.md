@@ -5,11 +5,12 @@ For example, calling unique_names(["Ava", "Emma", "Olivia"], ["Olivia", "Sophia"
 
 ```ruby
 def unique_names(names1, names2)
-  // your code
+  #your code
 end
 
 names1 = ["Ava", "Emma", "Olivia"]
 names2 = ["Olivia", "Sophia", "Emma"]
+
 puts(unique_names(names1, names2)) # should print Ava, Emma, Olivia, Sophia
 ```
 
@@ -23,6 +24,7 @@ end
   
 names1 = ["Ava", "Emma", "Olivia"]  
 names2 = ["Olivia", "Sophia", "Emma"]  
+
 puts(unique_names(names1, names2))  
 
 ```

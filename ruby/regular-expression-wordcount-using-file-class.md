@@ -8,10 +8,10 @@ Hint: use regular expression and File class
 
 ```ruby
 count = 0  
-File.foreach( 'regex1.rb' ){ |line|   
-count += line.scan( /[a-z0-9A-Z]+/ ).size  
+File.foreach('regex1.rb'){ |line|   
+  count += line.scan( /[a-z0-9A-Z]+/ ).size  
 }  
-puts( "There are #{count} words in this file." )
+puts("There are #{count} words in this file.")
 
 ```  
 ######  source :  http://www.sapphiresteel.com 
