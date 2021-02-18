@@ -6,9 +6,7 @@ a) Accepts a hash containing the file owner name for each file name.
 b) Returns a hash containing an array of file names for each owner name, in any order.
 
 
-For example, 
-
-for hash 
+For example, for hash 
 
 {'Input.txt' => 'Randy', 'Code.py' => 'Stan', 'Output.txt' => 'Randy'} 
 
@@ -19,6 +17,7 @@ the group_by_owners function should return
 
 ```ruby
 def group_by_owners(files)
+  # write your code here
   return nil
 end
 
