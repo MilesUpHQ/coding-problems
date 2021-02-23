@@ -1,5 +1,5 @@
 
-### Javascript Proxies <sup>**`advanced`**</sup>
+### Javascript Proxies
 
 #### Use Proxy to validate an Object by enforcing a maximum number of characters for product description.
 
