@@ -19,12 +19,11 @@ and four methods:
 ```ruby
 add_order: add the name of the item to the end of the orders array if it exists on the menu.
 
-
-If not, return "This item is unavailable, sorry!"
+         If not, return "This item is unavailable, sorry!"
 
 fulfill_order: if the orders array is not empty, return "The #{item} is ready!".
 
-If the orders array is empty, return "No orders to fulfill!"
+        If the orders array is empty, return "No orders to fulfill!"
 
 cheapest_item: return the name of the cheapest item on the menu.
 
