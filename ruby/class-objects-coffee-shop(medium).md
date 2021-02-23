@@ -2,14 +2,15 @@
 
 Write a class called Coffeeshop, which has three instance variables:
 
+```ruby
 name : a string
 
 menu : an array of items, with each item being a hash containing the keys :item (name of the item), :type (whether it is a food or a drink), and :price.
 
 orders : an empty array
-
+```
 and four methods:
-
+```ruby
 add_order: add the name of the item to the end of the orders array if it exists on the menu. If not, return "This item is unavailable, sorry!"
 
 fulfill_order: if the orders array is not empty, return "The #{item} is ready!". If the orders array is empty, return "No orders to fulfill!"
@@ -17,7 +18,7 @@ fulfill_order: if the orders array is not empty, return "The #{item} is ready!".
 cheapest_item: return the name of the cheapest item on the menu.
 
 drinks_only: return the names of only the drink items on the menu.
-
+```
 Note: Orders are fulfilled in a FIFO (first-in, first-out) order.
 
 
