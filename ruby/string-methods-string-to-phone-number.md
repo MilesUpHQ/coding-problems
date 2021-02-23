@@ -27,12 +27,12 @@ Convert all letters to numbers by using a cellular device keyboard as reference 
 
 Return a string containing the argument with replaced letters.
 
->Examples
-
->dial("1-800-HOTLINEBLING") ➞ "1-800-468546325464"
+Examples
+```ruby
+dial("1-800-HOTLINEBLING") ➞ "1-800-468546325464"
 
 >dial("abc-def-ghi-jkl!!") ➞ "222-333-444-555!!"
-
+```
 ### Solution
 ```ruby
 def dial(txt)
@@ -41,3 +41,4 @@ def dial(txt)
   txt.downcase.tr(letters, numbers)
 end
 ```
+######  source :https://edabit.com/challenges
