@@ -6,18 +6,20 @@ The method will receive a number as an input (temperature), a named parameter in
 
 It should perform interconversion between Celsius, Fahrenheit and Kelvin scale.
 
->Formulae
+Formulae
 
->Kelvin (K) = Celsius + 273.15
+```ruby
+Kelvin (K) = Celsius + 273.15
 
->Fahrenheit (°F) = (Celsius x 1.8) + 32
-
+Fahrenheit (°F) = (Celsius x 1.8) + 32
+```
 
 For example,
 
 ```ruby
 > convert_temp(0, input_scale: 'celsius', output_scale: 'kelvin')
 => 273.15 
+
 > convert_temp(0, input_scale: 'celsius', output_scale: 'fahrenheit')
 => 32.0
 ```
@@ -29,6 +31,7 @@ Use case statement to check the possible cases.
 ### Solution
 ```ruby
 def convert_temp(temp, input_scale:, output_scale: 'Celsius')
+
   case input_scale.downcase
     when 'fahrenheit'
       output_scale == 'kelvin' ? 
@@ -40,7 +43,9 @@ def convert_temp(temp, input_scale:, output_scale: 'Celsius')
       output_scale == 'celsius' ? 
       puts(temp - 273.15) : puts((temp - 273.15) * 1.8)
   end
+
 end
+
 convert_temp(100, input_scale: 'celsius', output_scale: 'kelvin')
 
 ```

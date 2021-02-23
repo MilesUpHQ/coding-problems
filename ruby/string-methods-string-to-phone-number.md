@@ -8,25 +8,18 @@ You're able to call numbers like
 
 which replace the characters with the associated numbers on a cellular device keyboard.
 
+```ruby
+Conversion
 
->Conversion
-
->abc  = 2
-
->def  = 3
-
->ghi  = 4
-
->jkl  = 5
-
->mno  = 6
-
->pqrs = 7
-
->tuv  = 8
-
->wxyz = 9
-
+abc  = 2
+def  = 3
+ghi  = 4
+jkl  = 5
+mno  = 6
+pqrs = 7
+tuv  = 8
+wxyz = 9
+```
 
 Create a function that takes a string as argument.
 
