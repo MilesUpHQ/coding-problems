@@ -3,9 +3,11 @@ Create a single function that takes a string or an array and returns a coded or 
 
 The first letter of the string, or the first element of the array represents the Character Code of that letter. The next elements are the differences between the characters: 
 
-i.e : A +3 --> C or
+for example :
 
-      z -1 --> y.
+A +3 --> C 
+z -1 --> y.
+
 
 ```ruby
 Examples
