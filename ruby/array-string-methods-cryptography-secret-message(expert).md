@@ -3,10 +3,13 @@ Create a single function that takes a string or an array and returns a coded or 
 
 The first letter of the string, or the first element of the array represents the Character Code of that letter. The next elements are the differences between the characters: 
 
-Example: A +3 --> C or z -1 --> y.
+i.e : A +3 --> C or
+
+      z -1 --> y.
 
 ```ruby
 Examples
+
 dif_ciph("Hello") ➞ [72, 29, 7, 0, 3]
 
 # H = 72, the difference between the H and e is 29 (upper- and lowercase).
