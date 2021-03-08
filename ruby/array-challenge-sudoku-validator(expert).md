@@ -1,12 +1,14 @@
 ### Question
 
-Write a sudoku validator that should return true if the 2-D array represents a valid sudoku and false otherwise. To be a valid sudoku:
+Write a sudoku validator that should return true if the 2-D array represents a valid sudoku and false otherwise. 
 
-a)Each row must have the digits from 1 to 9 exactly once.
+To be a valid sudoku:
 
-b)Each column must have the digits from 1 to 9 exactly once.
+a) Each row must have the digits from 1 to 9 exactly once.
 
-c)Each 3x3 box must have the digits from 1 to 9 exactly once.
+b) Each column must have the digits from 1 to 9 exactly once.
+
+c) Each 3x3 box must have the digits from 1 to 9 exactly once.
 
 ```ruby
 Examples
@@ -96,3 +98,4 @@ puts sudoku_validator([
   [ 8, 7, 3, 5, 1, 2, 9, 6, 4 ]
 ]) # false
 ```
+###### source: https://edabit.com/

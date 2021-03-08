@@ -18,9 +18,9 @@ e)Minutes
 
 Given an array arr and a string mode, implement a function that returns:
 
-a)if mode is equal to "ASC", the array arr sorted in ascending order.
+a) if mode is equal to "ASC", the array arr sorted in ascending order.
 
-b)if mode is equal to "DSC", the array arr sorted in descending order.
+b) if mode is equal to "DSC", the array arr sorted in descending order.
 
 ```ruby
 Examples
