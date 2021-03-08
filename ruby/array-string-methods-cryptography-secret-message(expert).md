@@ -6,6 +6,7 @@ The first letter of the string, or the first element of the array represents the
 for example :
 
 A +3 --> C 
+
 z -1 --> y.
 
 
