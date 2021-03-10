@@ -7,15 +7,12 @@ The function should work for all Roman numerals representing positive integers l
 
 The following table shows how digits will be represented in Roman numeral notation:
 
-Place value	1	2	3	4	5	6	 7	  8	   9
-
-Ones	    I	II	III	IV	V   VI  VII	VIII   IX
-
-Tens	    X	XX	XXX	XL	L	LX	LXX	LXXX   XC
-
-Hundreds	C	CC	CCC	CD	D	DC	DCC	DCCC   CM
-
-Thousands	M	MM	MMM	 -	-	 -	 -	  -	   -
+| Place value | 1 | 2  | 3   | 4  | 5 | 6  | 7   | 8    | 9  |
+|-------------|---|----|-----|----|---|----|-----|------|----|
+| Ones        | I | II | III | IV | V | VI | VII | VIII | IX |
+| Tens        | X | XX | XXX | XL | L | LX | LXX | LXXX | XC |
+| Hundreds    | C | CC | CCC | CD | D | DC | DCC | DCCC | CM |
+| Thousands   | M | MM | MMM | -  | - | -  | -   | -    | -  |
 
 ```ruby
 Examples
