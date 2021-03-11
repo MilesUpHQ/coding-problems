@@ -2,9 +2,7 @@
 
 Write a function that returns the dice with the correct amount of eyes in a single string.
 
-![alt text](https://ibb.co/drVtNLf)
-
-
+![alt text](https://github.com/Venirails/images/blob/main/dice.jpg?raw=true)
 
 ```ruby
 6 can be written as:
