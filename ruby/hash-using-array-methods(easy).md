@@ -1,4 +1,3 @@
-
 ### Question
 Given two hash 
 ```ruby

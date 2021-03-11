@@ -15,9 +15,20 @@ or
 
 O-O/O-O/O-O  // with slashes and dashes
 
-And 1 can be written as:
+And 
 
----/-O-/---
+1 => "---/-O-/---"
+
+2 => "O--/---/--O"
+
+3 => "O--/-O-/--O"
+
+4 => "O-O/---/O-O"
+
+5 => "O-O/-O-/O-O"
+
+6 => "O-O/O-O/O-O"
+
 
 ```
 
@@ -63,3 +74,4 @@ puts dice(8) #"O-O/O-O/O-O, O--/---/--O"
 
 puts dice(6) #"O-O/O-O/O-O"
 ```
+###### source : https://edabit.com/
