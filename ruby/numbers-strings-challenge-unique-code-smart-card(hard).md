@@ -1,7 +1,10 @@
+### Question
+
 You are generating a smart card unique code for all Indians after registering their details online.
 
 Given a hash containing the personal data of a person (name, gender and date of birth) return the 8 code characters as a string following these steps:
 
+```ruby
 months = { "1" => "A", "2" => "B", "3" => "C", 
 
          "4" => "D", "5" => "E", "6" => "H",
@@ -9,6 +12,7 @@ months = { "1" => "A", "2" => "B", "3" => "C",
          "7" => "L", "8" => "M", "9" => "P", 
 
          "10" => "R", "11" => "S", "12" => "T" }
+```
 
 Generate 3 capital letters from the name, if it has:
 
@@ -18,7 +22,7 @@ b) More than 3 consonants then first, third and fourth consonant are used (Saman
 
 c) Less than 3 consonants then vowels will replace missing characters in the same order they appear (Bob -> BBO | Paula -> PLA).
 
-4) Less than three letters then "X" will take the the third slot after the consonant and the vowel (Al -> LAX).
+d) Less than three letters then "X" will take the the third slot after the consonant and the vowel (Al -> LAX).
 
 Generate 2 numbers, 1 letter and 2 numbers from date of birth and gender:
 
@@ -64,7 +68,13 @@ c) The conversion table for months is already in the starting code.
 ### Solution
 
 ```ruby
-$months = { "1" => "A", "2" => "B", "3" => "C", "4" => "D", "5" => "E", "6" => "H","7" => "L", "8" =>"M", "9" => "P", "10" => "R", "11" => "S", "12" =>"T" }
+$months = { "1" => "A", "2" => "B", "3" => "C",
+
+          "4" => "D", "5" => "E", "6" => "H",
+
+          "7" => "L", "8" =>"M", "9" => "P",
+          
+          "10" => "R", "11" => "S", "12" =>"T" }
      
 def unique_code(person)
 
