@@ -16,23 +16,24 @@ months = { "1" => "A", "2" => "B", "3" => "C",
 
 Generate 3 capital letters from the name, if it has:
 
-a) Exactly 3 consonants then consonants are used in the order they appear (Matt -> MTT).
+   a) Exactly 3 consonants then consonants are used in the order they appear (Matt -> MTT).
 
-b) More than 3 consonants then first, third and fourth consonant are used (Samantha -> SNT | Thomas -> TMS).
+   b) More than 3 consonants then first, third and fourth consonant are used (Samantha -> SNT | Thomas -> TMS).
 
-c) Less than 3 consonants then vowels will replace missing characters in the same order they appear (Bob -> BBO | Paula -> PLA).
+   c) Less than 3 consonants then vowels will replace missing characters in the same order they appear (Bob -> BBO | Paula -> PLA).
 
-d) Less than three letters then "X" will take the the third slot after the consonant and the vowel (Al -> LAX).
+   d) Less than three letters then "X" will take the the third slot after the consonant and the vowel (Al -> LAX).
+
 
 Generate 2 numbers, 1 letter and 2 numbers from date of birth and gender:
 
-a) Take the last two digits of the year of birth (1985 -> 85).
+   a) Take the last two digits of the year of birth (1985 -> 85).
 
-b) Generate a letter corresponding to the month of birth (January -> A | December -> T) using the table for conversion included in the code.
+   b) Generate a letter corresponding to the month of birth (January -> A | December -> T) using the table for conversion included in the code.
 
-c) For males take the day of birth adding one zero at the start if is less than 10 (any 9th day -> 09 | any 20th day -> 20).
+   c) For males take the day of birth adding one zero at the start if is less than 10 (any 9th day -> 09 | any 20th day -> 20).
 
-d) For females take the day of birth and sum 40 to it (any 9th day -> 49 | any 20th day -> 60).
+   d) For females take the day of birth and sum 40 to it (any 9th day -> 49 | any 20th day -> 60).
 
 ```ruby
 
@@ -73,7 +74,7 @@ $months = { "1" => "A", "2" => "B", "3" => "C",
           "4" => "D", "5" => "E", "6" => "H",
 
           "7" => "L", "8" =>"M", "9" => "P",
-          
+
           "10" => "R", "11" => "S", "12" =>"T" }
      
 def unique_code(person)
