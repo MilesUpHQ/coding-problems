@@ -13,14 +13,14 @@ The suffix method:
 
 You will group all files with the same extension under the same folder.
 ```
-Create a function that takes in the current array sorts the files according to the organization method (prefix or suffix).
+Create a function that takes in the current array, sorts the files according to the organization method (prefix or suffix).
 
 Clue : Use File class inside a lamda to define prefix and suffix methods
 
 ```ruby
 Example 
 
- 'prefix' => ->(file) { #your File class code here },
+ 'prefix' => ->(file) { #your File class code here }
 ```
 
 ```ruby
