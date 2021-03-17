@@ -47,17 +47,17 @@ As in the 2nd and 3rd examples, the given array is allowed to include repeated e
 ### Solution
 ```ruby
 def max_consec(arr)
-	arr = arr.uniq.sort
-	c = m = 1
-	(1..(arr.size - 1)).each do |i|
-		if arr[i] - arr[i - 1] == 1
-			c += 1
-			m = [c, m].max
-		else
-			c = 1
-		end
-	end
-	m
+  arr = arr.uniq.sort
+  c = m = 1
+  (1..(arr.size - 1)).each do |i|
+    if arr[i] - arr[i - 1] == 1
+      c += 1
+      m = [c, m].max
+    else
+      c = 1
+    end
+  end
+ m
 end
 
 puts max_consec([4, 9, 10, 5, 17, 3, 8, 11, 1, 12, 18, 20]) # 5
