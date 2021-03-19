@@ -1,5 +1,20 @@
 ### Question
-Implement a group_by_owners function that:
+
+You have given a YAML file with some data.
+
+For example
+```ruby
+---
+
+Input.txt: Randy
+
+Code.py: Stan
+
+Output.txt: Randy
+
+```
+Convert the data into a hash.After that 
+implement a group_by_owners function that:
 
 a) Accepts a hash containing the file owner name for each file name.
 
@@ -14,6 +29,20 @@ For example, for hash
 the group_by_owners function should return 
 
 {'Randy' => ['Input.txt', 'Output.txt'], 'Stan' => ['Code.py'] }
+
+Convert this result hash into YAML format again.
+
+```ruby
+
+---
+Randy:
+- Input.txt
+- Output.txt
+Stan:
+- Code.py
+
+````
+Use this clue
 
 ```ruby
 def group_by_owners(files)
@@ -34,6 +63,13 @@ puts group_by_owners(files)
 ### Solution
 
 ```ruby
+require 'yaml'
+
+input = YAML.load("---
+                   Input.txt: Randy
+                   Code.py: Stan
+                   Output.txt: Randy") 
+
 def group_by_owners(files)
   new_hash = {}
     files.each do |key, value|
@@ -43,12 +79,16 @@ def group_by_owners(files)
   return new_hash
 end
 
-files = {
-  'Input.txt' => 'Randy',
-  'Code.py' => 'Stan',
-  'Output.txt' => 'Randy'
-}
+files = input.to_hash
 
-puts group_by_owners(files)
+puts group_by_owners(files).to_yaml
+
+
+#---
+#Randy:
+#- Input.txt
+#- Output.txt
+#Stan:
+#- Code.py
+
 ```
-###### source: https://www.testdome.com/
