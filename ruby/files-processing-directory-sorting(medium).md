@@ -13,7 +13,8 @@ Add the missing File class methods and complete this challenge
 
 Note : You need to add the code where ever you find
 
-> ==== Your code here ====
+
+> **==== Your code here ====**
 
 ```ruby
 $dirsize = 0
@@ -31,7 +32,7 @@ def processfiles( aDir )
         $dirs[mypath] = dsize
       end
     else
-      filesize = '==== Your code here ====='
+      filesize = '==== Your code here =====' # find the file size
       totalbytes += filesize
       $files[mypath] = filesize
     end
@@ -44,7 +45,7 @@ end
 
 dirname = "D:/sedin2021/Mastering Ruby/Ruby Quiz"
 
-if '=== your code here ====' then
+if '=== your code here ====' then # check if a directory
   puts( "#{dirname} is not a valid directory" )
 else
   processfiles( dirname )
@@ -61,7 +62,7 @@ end
 output of the above code
 
 ```ruby
-Size of this directory and subdirectories is 14240 bytes, 13K, 0.01MB
+Size of this directory and subdirectories is 1005 bytes, 1K, 0.01MB
 
 File sizes (ascending)...
 D:/sedin2021/Mastering Ruby/Ruby Quiz\range.rb : 67 bytes
@@ -71,14 +72,11 @@ D:/sedin2021/Mastering Ruby/Ruby Quiz\reduce.rb : 135 bytes
 D:/sedin2021/Mastering Ruby/Ruby Quiz\named_capture.rb : 202 bytes
 D:/sedin2021/Mastering Ruby/Ruby Quiz\loops.rb : 278 bytes
 D:/sedin2021/Mastering Ruby/Ruby Quiz\remove_undef.rb : 437 bytes
-D:/sedin2021/Mastering Ruby/Ruby Quiz\alias_quest.rb : 443 bytes
-D:/sedin2021/Mastering Ruby/Ruby Quiz\unlesss.rb : 512 bytes
-D:/sedin2021/Mastering Ruby/Ruby Quiz\alias_methods.rb : 553 bytes
-D:/sedin2021/Mastering Ruby/Ruby Quiz\chat_18.3.rb : 2974 bytes
-D:/sedin2021/Mastering Ruby/Ruby Quiz\all_questions.txt : 8464 bytes
+
+
 
 Directory sizes (ascending)...
-[Finished in 0.5s]
+
 ```
 ### Solution
 
