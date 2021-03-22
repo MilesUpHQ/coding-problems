@@ -6,7 +6,7 @@ The program should return an integer which corresponds to the maximum area of wa
 
 Note: You may not slant the container. 
 
-![Figure-1](../assets/images/container_with_most_water_example_figure.png)
+![Figure-1](../assets/images/container-with-most-water-example-figure.png)
 
 ```ruby
 Example 1:

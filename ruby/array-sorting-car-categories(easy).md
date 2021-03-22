@@ -17,11 +17,11 @@ sort_cars.call(cars, sequence)
 
 # Example Output
 [
-  {name: "ciaz", class: "luxury"},
-  {name: "baleno", class: "premium"},
-  {name: "scross", class: "premium"},
-  {name: "ignis", class: "standard"},
-  {name: "alto", class: "standard"}
+  {name: "ciaz", grade: "luxury"},
+  {name: "baleno", grade: "premium"},
+  {name: "scross", grade: "premium"},
+  {name: "ignis", grade: "standard"},
+  {name: "alto", grade: "standard"}
 ]
 ```
 

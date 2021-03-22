@@ -13,7 +13,7 @@ For example, for hash
 
 the group_by_owners function should return 
 
-{'Randy' => ['Input.txt', 'Output.txt'], 'Stan' => ['Code.py']
+{'Randy' => ['Input.txt', 'Output.txt'], 'Stan' => ['Code.py']}
 
 ```ruby
 def group_by_owners(files)
