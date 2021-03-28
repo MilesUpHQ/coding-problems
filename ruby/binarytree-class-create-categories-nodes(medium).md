@@ -19,6 +19,25 @@ Implement the add_category and get_children methods of the CategoryTree class.
 
 ## Solution
 
+```ruby
+class CategoryTree
+
+  def initialize
+    @categories = {}
+  end
+
+  def add_category(category, parent)
+    raise ArgumentError if @categories.include?(category)
+    raise ArgumentError unless @categories.include?(parent) || parent.nil?
+    @categories[category] = parent
+  end
+
+  def get_children(category)
+    return @categories.select{ |cat, parent| parent == category }.keys
+  end
+
+end
+```
 
 ## Problem variant
 
