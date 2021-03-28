@@ -19,3 +19,39 @@ Implement the add_category and get_children methods of the CategoryTree class.
 
 ## Solution
 
+
+## Problem variant
+
+Create the categories and child categories in a tree structure using class objects
+
+```ruby
+root = Tree.new("root")
+root.children           # []
+
+root.category              # "category1"
+root.children[0].category  # "category1-1"
+root.children.find {|n| n.category == "category1"}
+```
+
+## Solution
+
+```ruby
+class Tree
+  attr_accessor :children, :category
+
+  def initialize(category)
+    @category = category
+    @children = []
+  end
+end
+
+t = Tree.new("category1")
+t.children << Tree.new("category1-1")
+t.children << Tree.new("category1-2")
+
+t.category              # "category1"
+t.children[0].category  # "category1-1"
+t.children[1].category  # "category1-2"
+
+t.children.find {|o| o.category == "category1-1"}
+```
