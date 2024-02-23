@@ -20,7 +20,17 @@ frequency_sort("cccaaa") ➞ "aaaccc"
 frequency_sort("Aabb") ➞ "bbAa"
 ```
 
-### Solution
+### Solution 1:
+
+```ruby
+def frequency_sort(s)
+  hash = s.chars.tally
+  s.chars.sort_by { |ch| [-hash[ch], ch.downcase, ch] }.join
+end
+```
+
+### Solution 2:
+
 ```ruby
 def get_extended_letter_count(text)
   cnt = Hash.new
