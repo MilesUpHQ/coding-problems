@@ -44,3 +44,22 @@ const node = {
 
 invertTree(node);
 ```
+
+## Solution 2
+
+```js
+const inverseTree = (tree) => {
+  const {
+    value,
+    left,
+    right
+  } = tree;
+  if (left) {
+    tree.right = inverseTree(left);
+  }
+  if (right) {
+    tree.left = inverseTree(right);
+  }
+  return tree;
+};
+```
