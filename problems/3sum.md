@@ -87,3 +87,26 @@ def three_sum(nums)
 
     p three_sum(nums)
 ```
+
+## Solution 3
+
+```ruby
+nums = [1, 0, -1, 0, -2, 2]
+
+def three_sum(nums)
+  nums.sort!
+  result = []
+  nums.each_with_index do |num, i|
+    (i +1).upto(nums.length - 1) do |j|
+      complement = 0 - num[i] - num[j]
+      if nums.include?(complement)
+        result << [num[i], num[j], complement]
+      end
+    end
+  end
+  result.uniq
+end
+
+p three_sum(nums)
+
+```
