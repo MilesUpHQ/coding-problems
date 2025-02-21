@@ -34,7 +34,7 @@ Constraints:
 -105 <= nums[i] <= 105
 
 
-## Solution 1
+## Solution 1 ( Sort + 2 pointer aproach)
 
 ```ruby
 def three_sum(nums)
@@ -62,7 +62,7 @@ def three_sum(nums)
 end
 ```
 
-## Solution 2
+## Solution 2 (sort + hash table or hash map)
 
 ```ruby
 def three_sum(nums)
@@ -88,7 +88,7 @@ def three_sum(nums)
     p three_sum(nums)
 ```
 
-## Solution 3
+## Solution 3 (sort + linear search)
 
 ```ruby
 nums = [1, 0, -1, 0, -2, 2]
