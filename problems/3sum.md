@@ -110,3 +110,32 @@ end
 p three_sum(nums)
 
 ```
+
+## Solution 4 (sort + binary search)
+
+```ruby
+def three_sum(nums)
+  nums.sort!
+  results = []
+  nums.each_with_index do |num, i|
+    next if i > 0 && nums[i] == nums[i - 1]
+    (i +1).upto(nums.length - 1) do |j|
+      next if j > i + 1 && nums[j] == nums[j - 1]
+      complement = 0 - nums[i] - nums[j]
+      low, high = j + 1, nums.length - 1
+      while low <= high
+        mid = (low + high)/2
+        if nums[mid] == complement
+          results << [complement, nums[i], nums[j]].sort
+          break
+        elsif nums[mid] < complement
+          low = mid + 1
+        else
+          high = mid - 1
+        end
+      end  
+    end
+  end
+  results.uniq
+end
+```
