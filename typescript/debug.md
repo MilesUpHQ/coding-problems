@@ -1,20 +1,14 @@
-/**
- * This code is designed to aggregate a list of transactions by userId,
- * compute the average amount spent per user, and return a list of strings with the average amount for each user,
- * sorted in descending order. However, there are several bugs in the code that need to be fixed.
- * 
- * Your task is to identify and fix these bugs to ensure the program works as expected.
- */
+
+This code is designed to aggregate a list of transactions by userId, compute the average amount spent per user and return a list of strings with the average amount for each user, sorted in descending order. However, there are several bugs in the code that need to be fixed. Your task is to identify and fix these bugs to ensure the program works as expected.
+
+```typescript
+
 type Tx = { userId: string; amount: number };
 type Stats = { total: number; count: number; avg: number };
 type Aggregated = Record<string, Stats>;
 
-function cloneDeep<T>(obj: T): T {
-  return JSON.parse(JSON.stringify(obj));
-}
-
 function aggregateTxs<T extends Tx>(transactions: T[]): Aggregated {
-  const txs = cloneDeep(transactions);
+  const txs = transactions;
   const template: Stats = { total: 0, count: 0, avg: 0 };
   const result: Aggregated = {};
 
@@ -50,3 +44,12 @@ const sample: Tx[] = [
 
 console.log(formatAverages(sample));
 // Expected: [ 'alice: avg=75.00', 'bob: avg=20.00' ]
+
+```
+#### How to Fix:
+
+1. **Fix 1:** Create a new object for each user in the aggregation to avoid pass-by-reference issues.
+
+2. **Fix 2**: Correct the average calculation formula by removing the incorrect + 1.
+
+3. **Fix 3:** Update the sorting logic to correctly compare numeric values by converting the string to a number using parseFloat().
